@@ -17,7 +17,7 @@ LoginTest
      element should be visible   ${WelcomeToNourish}
      element should be enabled   ${WelcomeToNourish}
      LoginToApplication
-     Log to console  Login To Application successful
+     Log to console  Login To Nourish Application successful
      close browser
 
 
