@@ -12,7 +12,7 @@ ${WelcomeToNourish}  xpath://h3[@class='bold-font']
 
 *** Test Cases ***
 LoginTest
-     Create Webdriver    ${Browser}  executable_path=C:\\BrowserDrivers\\chromedriver.exe
+     Create Webdriver    ${Browser}  executable_path=C:\\Users\\Vijay\\PycharmProjects\\NourishRobotFrameworkTestAutomation\\BrowserDrivers\\chromedriver.exe
      Go To     ${Url}
      element should be visible   ${WelcomeToNourish}
      element should be enabled   ${WelcomeToNourish}

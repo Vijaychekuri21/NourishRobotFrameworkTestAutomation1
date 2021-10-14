@@ -1,66 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20210908 11:47:37.122" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20211014 16:11:18.433" rpa="false" schemaversion="2">
 <suite id="s1" name="TC1" source="C:\Users\Vijay\PycharmProjects\NourishRobotFrameworkTestAutomation\TC1.robot">
 <test id="s1-t1" name="LoginTest">
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <arg>${Browser}</arg>
-<arg>executable_path=C:\\BrowserDrivers\\chromedriver.exe</arg>
+<arg>executable_path=C:\\Users\\Vijay\\PycharmProjects\\NourishRobotFrameworkTestAutomation\\BrowserDrivers\\chromedriver.exe</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20210908 11:47:37.269" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20210908 11:47:37.269" endtime="20210908 11:47:38.339"/>
+<msg timestamp="20211014 16:11:18.565" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20211014 16:11:18.565" endtime="20211014 16:11:19.708"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${Url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210908 11:47:38.339" level="INFO">Opening url 'https://dev-org.nourishcare.co.uk/login'</msg>
-<status status="PASS" starttime="20210908 11:47:38.339" endtime="20210908 11:47:39.224"/>
+<msg timestamp="20211014 16:11:19.723" level="INFO">Opening url 'https://dev-org.nourishcare.co.uk/login'</msg>
+<status status="PASS" starttime="20211014 16:11:19.723" endtime="20211014 16:11:20.409"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${WelcomeToNourish}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20210908 11:47:39.240" level="INFO">Element 'xpath://h3[@class='bold-font']' is displayed.</msg>
-<status status="PASS" starttime="20210908 11:47:39.224" endtime="20210908 11:47:39.240"/>
+<msg timestamp="20211014 16:11:20.432" level="INFO">Element 'xpath://h3[@class='bold-font']' is displayed.</msg>
+<status status="PASS" starttime="20211014 16:11:20.409" endtime="20211014 16:11:20.432"/>
 </kw>
 <kw name="Element Should Be Enabled" library="SeleniumLibrary">
 <arg>${WelcomeToNourish}</arg>
 <doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20210908 11:47:39.241" endtime="20210908 11:47:39.253"/>
+<status status="PASS" starttime="20211014 16:11:20.432" endtime="20211014 16:11:20.447"/>
 </kw>
 <kw name="LoginToApplication">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath://input[@placeholder='Login']</arg>
 <arg>${Email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210908 11:47:39.253" level="INFO">Typing text 'vijaya.chekuri@nourishcare.co.uk' into text field 'xpath://input[@placeholder='Login']'.</msg>
-<status status="PASS" starttime="20210908 11:47:39.253" endtime="20210908 11:47:39.304"/>
+<msg timestamp="20211014 16:11:20.448" level="INFO">Typing text 'vijaya.chekuri@nourishcare.co.uk' into text field 'xpath://input[@placeholder='Login']'.</msg>
+<status status="PASS" starttime="20211014 16:11:20.448" endtime="20211014 16:11:20.499"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath://input[@placeholder='Password']</arg>
 <arg>${Password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210908 11:47:39.304" level="INFO">Typing text 'Tulasi@23' into text field 'xpath://input[@placeholder='Password']'.</msg>
-<status status="PASS" starttime="20210908 11:47:39.304" endtime="20210908 11:47:39.349"/>
+<msg timestamp="20211014 16:11:20.499" level="INFO">Typing text 'Tulasi@23' into text field 'xpath://input[@placeholder='Password']'.</msg>
+<status status="PASS" starttime="20211014 16:11:20.499" endtime="20211014 16:11:20.544"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@type='submit']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210908 11:47:39.350" level="INFO">Clicking element '//input[@type='submit']'.</msg>
-<status status="PASS" starttime="20210908 11:47:39.349" endtime="20210908 11:47:41.426"/>
+<msg timestamp="20211014 16:11:20.544" level="INFO">Clicking element '//input[@type='submit']'.</msg>
+<status status="PASS" starttime="20211014 16:11:20.544" endtime="20211014 16:11:22.719"/>
 </kw>
-<status status="PASS" starttime="20210908 11:47:39.253" endtime="20210908 11:47:41.426"/>
+<status status="PASS" starttime="20211014 16:11:20.447" endtime="20211014 16:11:22.719"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Login To Nourish Care Application successful</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210908 11:47:41.426" endtime="20210908 11:47:41.427"/>
+<status status="PASS" starttime="20211014 16:11:22.720" endtime="20211014 16:11:22.720"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210908 11:47:41.427" endtime="20210908 11:47:43.510"/>
+<status status="PASS" starttime="20211014 16:11:22.720" endtime="20211014 16:11:24.823"/>
 </kw>
-<status status="PASS" starttime="20210908 11:47:37.269" endtime="20210908 11:47:43.510"/>
+<status status="PASS" starttime="20211014 16:11:18.565" endtime="20211014 16:11:24.823"/>
 </test>
-<status status="PASS" starttime="20210908 11:47:37.122" endtime="20210908 11:47:43.510"/>
+<status status="PASS" starttime="20211014 16:11:18.449" endtime="20211014 16:11:24.823"/>
 </suite>
 <statistics>
 <total>
